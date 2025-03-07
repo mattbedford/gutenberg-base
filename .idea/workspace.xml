@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76f774bc-c9a6-4553-ad26-4b9110e73a38" name="Changes" comment="" />
+    <list default="true" id="76f774bc-c9a6-4553-ad26-4b9110e73a38" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/noob/build/block.json" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/noob/build/block.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/noob/build/index.asset.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/noob/build/index.asset.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/noob/build/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/noob/build/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/noob/build/index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/noob/build/index.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/noob/src/block.json" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/noob/src/block.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/noob/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/noob/src/index.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -73,7 +81,7 @@
       <workItem from="1741253409917" duration="7123000" />
       <workItem from="1741264576086" duration="2086000" />
       <workItem from="1741276690927" duration="3942000" />
-      <workItem from="1741334100722" duration="7167000" />
+      <workItem from="1741334100722" duration="10802000" />
     </task>
     <servers />
   </component>

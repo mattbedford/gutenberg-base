@@ -19,6 +19,10 @@
     "directionVertical": {
       "type": "boolean",
       "default": false
+    },
+    "numberSlides": {
+      "type": "integer",
+      "default": 3
     }
   }
 }
