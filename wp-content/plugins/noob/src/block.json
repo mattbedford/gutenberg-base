@@ -1,0 +1,22 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "noob/noob-block",
+  "version": "1.0.0",
+  "title": "Noob block",
+  "category": "block",
+  "icon": "shortcode",
+  "description": "Container block.",
+  "supports": { "html": false },
+  "editorScript": "file:./index.js",
+  "attributes": {
+    "sliderType": {
+      "type": "string",
+      "default": "speakers"
+    },
+    "directionVertical": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

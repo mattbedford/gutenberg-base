@@ -1,0 +1,16 @@
+{
+  "config": {
+    "WP_DEBUG": true,
+    "WP_DEBUG_LOG": true,
+    "SCRIPT_DEBUG": false,
+    "WP_DEBUG_DISPLAY": true
+  },
+  "themes": ["https://downloads.wordpress.org/theme/twentytwentyfive.1.1.zip"],
+  "mappings": {
+    "wp-content/uploads": "./wp-content/uploads",
+    "wp-content/themes": "./wp-content/themes",
+    "wp-content/plugins": "./wp-content/plugins",
+    "wp-content/debug.log": "./debug.log",
+    ".htaccess": "./.htaccess"
+  }
+}
