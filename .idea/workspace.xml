@@ -4,14 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76f774bc-c9a6-4553-ad26-4b9110e73a38" name="Changes" comment="">
+    <list default="true" id="af23f228-1382-4220-a5c4-fd5c9595452c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/plugins/noob/build/block.json" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/noob/build/block.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/plugins/noob/build/index.asset.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/noob/build/index.asset.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/plugins/noob/build/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/noob/build/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/plugins/noob/build/index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/noob/build/index.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/noob/src/block.json" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/noob/src/block.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/noob/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/noob/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,64 +24,50 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/bin/php">
+  <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
       <path value="$PROJECT_DIR$/../wp-core" />
     </include_path>
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 4
+  &quot;associatedIndex&quot;: 7
 }</component>
-  <component name="ProjectId" id="2ttgsn7AyvFPpP6iyuwrMj9NQOn" />
+  <component name="ProjectId" id="2uBNj9EMjLIOfw5VxgMSjy2LcLt" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.laravel-idea.search-composer-json&quot;: &quot;true&quot;,
-    &quot;disable.download.node.interpreter.editor.notification&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/matt/Dev/wp-core&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.webide.settings.project.settings.php&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/wp-content" />
-    </key>
-  </component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-PS-242.23726.107" />
-        <option value="bundled-php-predefined-a98d8de5180a-90914f2295cb-com.jetbrains.php.sharedIndexes-PS-242.23726.107" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-PS-243.25659.45" />
+        <option value="bundled-php-predefined-a98d8de5180a-1ec7b7818973-com.jetbrains.php.sharedIndexes-PS-243.25659.45" />
       </set>
     </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="76f774bc-c9a6-4553-ad26-4b9110e73a38" name="Changes" comment="" />
-      <created>1741176993834</created>
+      <changelist id="af23f228-1382-4220-a5c4-fd5c9595452c" name="Changes" comment="" />
+      <created>1741718139692</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1741176993834</updated>
-      <workItem from="1741176994847" duration="268000" />
-      <workItem from="1741182572046" duration="139000" />
-      <workItem from="1741183085093" duration="6000" />
-      <workItem from="1741183109563" duration="1908000" />
-      <workItem from="1741253409917" duration="7123000" />
-      <workItem from="1741264576086" duration="2086000" />
-      <workItem from="1741276690927" duration="3942000" />
-      <workItem from="1741334100722" duration="10802000" />
+      <updated>1741718139692</updated>
+      <workItem from="1741718140786" duration="2412000" />
+      <workItem from="1741724464894" duration="721000" />
     </task>
     <servers />
   </component>
