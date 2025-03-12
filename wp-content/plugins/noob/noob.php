@@ -13,6 +13,6 @@ function noob_init() {
 
     register_block_type( __DIR__ . '/build', [
         //'editor_script' => 'editor-script-handle',
-        'render_callback' => [NoobObject::class, 'SomeCallable' ]
+        'render_callback' => [NoobObject::class, 'Init' ]
     ]);
 }
