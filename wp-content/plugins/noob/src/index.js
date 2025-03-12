@@ -9,7 +9,9 @@ registerBlockType( metadata.name, {
         // Destructure your attributes from block.json here so you can call them by name
         const { attributes, setAttributes } = props;
 
-        console.log(attributes);
+        const blockProps = useBlockProps();
+        setAttributes({ uniqueId: blockProps.id});
+
         return (
             <>
                 <InspectorControls>

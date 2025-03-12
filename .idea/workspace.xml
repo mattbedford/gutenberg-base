@@ -5,9 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63f8674e-2147-4c5d-abff-243c52226a99" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/noob/includes/JavascriptConfig.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/noob/includes/Settings.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/noob/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/noob/build/block.json" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/noob/build/block.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/noob/build/index.asset.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/noob/build/index.asset.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/noob/build/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/noob/build/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/noob/build/index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/noob/build/index.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/plugins/noob/includes/NoobObject.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/noob/includes/NoobObject.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/noob/noob.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/noob/noob.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/noob/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/noob/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/noob/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/noob/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/noob/src/block.json" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/noob/src/block.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/noob/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/noob/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +47,9 @@
   &quot;associatedIndex&quot;: 8
 }</component>
   <component name="ProjectId" id="2uD2tw4GxKDq3T3eEiyXILVgJDt" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -54,6 +68,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/wp-content" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -71,7 +90,7 @@
       <option name="presentableId" value="Default" />
       <updated>1741769042887</updated>
       <workItem from="1741769043841" duration="25000" />
-      <workItem from="1741769072486" duration="8815000" />
+      <workItem from="1741769072486" duration="15607000" />
     </task>
     <servers />
   </component>

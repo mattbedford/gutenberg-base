@@ -8,7 +8,7 @@
   \************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"noob/noob-block","version":"1.0.0","title":"Noob block","category":"block","icon":"shortcode","description":"Container block.","supports":{"html":false},"editorScript":"file:./index.js","attributes":{"sliderType":{"type":"string","default":"speakers"},"directionVertical":{"type":"boolean","default":false},"numberSlides":{"type":"integer","default":3}}}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"noob/noob-block","version":"1.0.0","title":"Noob block","category":"block","icon":"shortcode","description":"Container block.","supports":{"html":false},"editorScript":["swiper-js","file:./index.js"],"script":["swiper-js"],"style":["custom-swiper-css","swiper-css"],"viewStyle":["custom-swiper-css","swiper-css"],"attributes":{"uniqueId":{"type":"string","default":""},"sliderType":{"type":"string","default":"speakers"},"directionVertical":{"type":"boolean","default":false},"numberSlides":{"type":"integer","default":3}}}');
 
 /***/ }),
 
@@ -148,7 +148,10 @@ __webpack_require__.r(__webpack_exports__);
       attributes,
       setAttributes
     } = props;
-    console.log(attributes);
+    const blockProps = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)();
+    setAttributes({
+      uniqueId: blockProps.id
+    });
     return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InspectorControls, {
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.PanelBody, {

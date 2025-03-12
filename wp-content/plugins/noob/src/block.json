@@ -8,8 +8,15 @@
   "icon": "shortcode",
   "description": "Container block.",
   "supports": { "html": false },
-  "editorScript": "file:./index.js",
+  "editorScript": ["swiper-js","file:./index.js"],
+  "script": ["swiper-js"],
+  "style": ["custom-swiper-css", "swiper-css"],
+  "viewStyle": ["custom-swiper-css", "swiper-css"],
   "attributes": {
+    "uniqueId": {
+      "type": "string",
+      "default": ""
+    },
     "sliderType": {
       "type": "string",
       "default": "speakers"

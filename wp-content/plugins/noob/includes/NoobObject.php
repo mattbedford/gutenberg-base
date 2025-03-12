@@ -15,7 +15,15 @@ abstract class NoobObject {
 
     public static $html = "<p>Slider could not be loaded</p>";
 
-    public static function Init($atts, $content, $block) {
+    public static function Init($atts, $content, $block): string {
+
+	    // Register helper classes
+	    include_once 'Settings.php';
+	    include_once 'JavascriptConfig.php';
+
+
+	    $settings_object = new Settings($atts);
+
 
         $method = "Create" . ucfirst($atts['sliderType']) . "Slider";
         if((method_exists(self::class, $method))) {
@@ -29,7 +37,7 @@ abstract class NoobObject {
     private static function CreateSpeakersSlider($atts, $content, $block): void
     {
 		// Set up posts array
-	    $posts = get_posts(['post_type' => 'speaker', 'posts_per_page' => 10]);
+	    $posts = get_posts(['post_type' => 'speaker', 'posts_per_page' => 6]);
 		if(!empty($posts)) {
 			$posts = self::PostMap($posts);
 		}
@@ -40,7 +48,9 @@ abstract class NoobObject {
 
 		// Build html - include atts and wp classes in wrapper
 	    $html ="<div style='border:6px dashed deeppink;height:200px;text-align:center;padding:40px;Margin:10px;'";
-	    $html .= " class='" . get_block_wrapper_attributes() . "'>";
+	    $html .= "id='swiper-" . $atts['uniqueId'] . "' ";
+		$html .= get_block_wrapper_attributes() . "'>";
+
 		foreach($posts as $post) {
 			$html .= "<div class='slide-single speaker-slide'>";
 			$html .= "<img class='speaker-photo' src='" . $post['image'] . "' alt='" . $post['title'] . ", " . $post['position'] . " at " . $post['company'] . "' />";
@@ -81,6 +91,10 @@ abstract class NoobObject {
 
 	}
 
+	private static function PrintJavascript($settings): void
+	{
 
+		JavascriptConfig::CreateSettings($settings);
+	}
 
 }
