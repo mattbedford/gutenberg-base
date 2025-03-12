@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63f8674e-2147-4c5d-abff-243c52226a99" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/noob/build/block.json" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/noob/build/block.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/noob/build/index.asset.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/noob/build/index.asset.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/noob/build/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/noob/build/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/noob/build/index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/noob/build/index.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/plugins/noob/includes/NoobObject.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/noob/includes/NoobObject.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/noob/noob.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/noob/noob.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,10 +17,21 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+  <component name="DrupalConfiguration">
+    <drupalPath />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/bin/php" />
+  <component name="JoomlaConfiguration">
+    <joomlaConfigPath />
+    <joomlaPath />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/bin/php">
+    <include_path>
+      <path value="$PROJECT_DIR$/../wordpress" />
+    </include_path>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -37,12 +44,13 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/matt/Dev/wordpress",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.webide.settings.project.settings.php",
+    "settings.editor.selected.configurable": "settings.php.frameworks",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -63,11 +71,14 @@
       <option name="presentableId" value="Default" />
       <updated>1741769042887</updated>
       <workItem from="1741769043841" duration="25000" />
-      <workItem from="1741769072486" duration="3195000" />
+      <workItem from="1741769072486" duration="8815000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="WordPressConfiguration" enabled="true">
+    <wordpressPath>$PROJECT_DIR$/../wordpress</wordpressPath>
   </component>
 </project>
