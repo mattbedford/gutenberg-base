@@ -15,10 +15,10 @@ class Settings
 
 		$this->fields = [
 			"slider_selector_id" => $block_id,
-			"pagination" => get_field('enable_pagination' ?? false),
-			"navigation" => get_field('enable_nav') ?? false,
-			"scrollbar" => get_field('enable_scrollbar') ?? false,
-			"slides" => get_field('slides') ?? [],
+			//"pagination" => get_field('enable_pagination' ?? false),
+			//"navigation" => get_field('enable_nav') ?? false,
+			//"scrollbar" => get_field('enable_scrollbar') ?? false,
+			"slides" => $block['numberSlides'] ?? [],
 		];
 	}
 }

@@ -21,7 +21,6 @@ abstract class NoobObject {
 	    include_once 'Settings.php';
 	    include_once 'JavascriptConfig.php';
 
-
 	    $settings_object = new Settings($atts);
 
 
@@ -30,6 +29,7 @@ abstract class NoobObject {
             self::$method($atts, $content, $block);
         }
 
+		self::$html .= JavascriptConfig::CreateSettings($atts);
         return self::$html;
 
     }
@@ -48,11 +48,13 @@ abstract class NoobObject {
 
 		// Build html - include atts and wp classes in wrapper
 	    $html ="<div style='border:6px dashed deeppink;height:200px;text-align:center;padding:40px;Margin:10px;'";
-	    $html .= "id='swiper-" . $atts['uniqueId'] . "' ";
+	    $html .= "id='" . $atts['uniqueId'] . "' ";
+	    $html .= "data-class='swiper-instance'";
 		$html .= get_block_wrapper_attributes() . "'>";
+		$html .= "<div class='swiper-wrapper'>";
 
 		foreach($posts as $post) {
-			$html .= "<div class='slide-single speaker-slide'>";
+			$html .= "<div class='slide-single speaker-slide swiper-slide'>";
 			$html .= "<img class='speaker-photo' src='" . $post['image'] . "' alt='" . $post['title'] . ", " . $post['position'] . " at " . $post['company'] . "' />";
 			$html .= "<div class='slide-single-content'>";
 			$html .= "<p>" . $post['title'] . "</p>";
@@ -61,6 +63,7 @@ abstract class NoobObject {
 			$html .= "</div>";
 			$html .= "</div>";
 		}
+		$html .= "</div>";
 		$html .= "</div>";
 
         //$html .= "Our display type is $display And our slider type is: $slider_type - rejoice!";

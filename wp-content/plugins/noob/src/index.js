@@ -10,7 +10,9 @@ registerBlockType( metadata.name, {
         const { attributes, setAttributes } = props;
 
         const blockProps = useBlockProps();
-        setAttributes({ uniqueId: blockProps.id});
+        const formattedUniquesId = blockProps.id.replace(/[_\-]/g, "");
+        setAttributes({ uniqueId: formattedUniquesId});
+        console.log("Your unique ID is: " + formattedUniquesId);
 
         return (
             <>

@@ -6,13 +6,15 @@ namespace noob;
 abstract class JavascriptConfig
 {
 
-	public static function CreateSettings($args): void {
+	public static function CreateSettings($args): string {
 
-		$unique_id = $args['slider_selector_id'];
-		?>
+		$unique_id = trim($args['uniqueId']);
+
+        ob_start();
+        ?>
 
 		<script defer>
-            var swiper<?php echo $unique_id; ?> = new Swiper('.swiper<?php echo $unique_id; ?>', {
+            let <?php echo $unique_id; ?> = new Swiper('#<?php echo $unique_id;?>', {
                 slidesPerView: 1,
                 spaceBetween: 30,
                 loop: true,
@@ -37,21 +39,21 @@ abstract class JavascriptConfig
 						}
 					} ?>
                 },
-				<?php if($args['pagination']) { ?>
+				<?php if(isset($args['pagination'])) { ?>
                 pagination: {
                     el: '.swiper-pagination<?php echo $unique_id; ?>',
                     clickable: true,
                 },
 				<?php } ?>
 
-				<?php if($args['navigation']) { ?>
+				<?php if(isset($args['navigation'])) { ?>
                 navigation: {
                     nextEl: '.swiper-button-next<?php echo $unique_id; ?>',
                     prevEl: '.swiper-button-prev<?php echo $unique_id; ?>',
                 }
 				<?php } ?>
 
-				<?php if($args['scrollbar']) { ?>
+				<?php if(isset($args['scrollbar'])) { ?>
                 scrollbar: {
                     el: '.swiper-scrollbar<?php echo $unique_id; ?>',
                 }
@@ -59,7 +61,9 @@ abstract class JavascriptConfig
             });
 		</script>
 
-	<?php }
+	<?php
+        return ob_get_clean();
+    }
 
 
 	public static function isNavigationEnabled(array $navigationSettings): bool

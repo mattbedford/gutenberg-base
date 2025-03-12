@@ -149,9 +149,11 @@ __webpack_require__.r(__webpack_exports__);
       setAttributes
     } = props;
     const blockProps = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)();
+    const formattedUniquesId = blockProps.id.replace(/[_\-]/g, "");
     setAttributes({
-      uniqueId: blockProps.id
+      uniqueId: formattedUniquesId
     });
+    console.log("Your unique ID is: " + formattedUniquesId);
     return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InspectorControls, {
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.PanelBody, {
