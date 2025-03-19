@@ -34,10 +34,10 @@ abstract class NoobObject {
 
     }
 
-    private static function CreateSpeakersSlider($atts, $content, $block): void
+    private static function CreateFeaturedSlider($atts, $content, $block): void
     {
 		// Set up posts array
-	    $posts = get_posts(['post_type' => 'speaker', 'posts_per_page' => 6]);
+	    $posts = get_posts(['post_type' => 'project', 'posts_per_page' => 6]);
 		if(!empty($posts)) {
 			$posts = self::PostMap($posts);
 		}
@@ -47,19 +47,20 @@ abstract class NoobObject {
         $display = ((bool)$atts['directionVertical'] ? "vertical display" : "horizontal display");
 
 		// Build html - include atts and wp classes in wrapper
-	    $html ="<div style='border:6px dashed deeppink;height:200px;text-align:center;padding:40px;Margin:10px;'";
+	    $html ="<div ";
 	    $html .= "id='" . $atts['uniqueId'] . "' ";
 	    $html .= "data-class='swiper-instance'";
 		$html .= get_block_wrapper_attributes() . "'>";
 		$html .= "<div class='swiper-wrapper'>";
 
 		foreach($posts as $post) {
-			$html .= "<div class='slide-single speaker-slide swiper-slide'>";
-			$html .= "<img class='speaker-photo' src='" . $post['image'] . "' alt='" . $post['title'] . ", " . $post['position'] . " at " . $post['company'] . "' />";
+			$html .= "<div class='slide-single project-slide swiper-slide'>";
+			$html .= "<img class='project-photo' src='" . $post['image'] . "' alt='" . $post['title'] . "' />";
 			$html .= "<div class='slide-single-content'>";
 			$html .= "<p>" . $post['title'] . "</p>";
-			$html .= "<p>" . $post['position'] . "</p>";
-			$html .= "<img src='" . $post['logo'] . "' alt='Company logo of " . $post['company'] . "' />";
+			$html .= "<img src='" . $post['logo'] . " alt='Imagine del nostro progetto' />";
+			$html .= "<p>" . $post['luogo'] . "</p>";
+			$html .= "<a href='" . $post['link'] . "'>Scopri il progetto</a>";
 			$html .= "</div>";
 			$html .= "</div>";
 		}
@@ -85,10 +86,9 @@ abstract class NoobObject {
 			return [
 				'id' => $post->ID,
 				'title' => $post->post_title,
-				'image' => wp_get_attachment_image_url( (int) $post->speaker_photo, 'large'),
-				'position' => $post->position,
-				'company' => get_the_title( (int) $post->my_company),
-				'logo' => wp_get_attachment_image_url( get_post_meta( (int) $post->my_company, 'company_logo', true), 'large'),
+				'luogo' => get_the_title( (int) $post->luogo),
+				'image' => wp_get_attachment_image_url( get_post_thumbnail_id( $post->ID ), 'large' ),
+				'link'  => get_the_permalink( $post->ID ),
 			];
 		}, $posts);
 

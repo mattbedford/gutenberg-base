@@ -19,7 +19,7 @@
     },
     "sliderType": {
       "type": "string",
-      "default": "speakers"
+      "default": "all"
     },
     "directionVertical": {
       "type": "boolean",

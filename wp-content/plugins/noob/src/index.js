@@ -37,8 +37,8 @@ registerBlockType( metadata.name, {
                             label="Choose your slider type"
                             value={[attributes.sliderType]}
                             options={[
-                                {label: 'Speakers', value: 'speakers'},
-                                {label: 'Sponsors', value: 'sponsors'},
+                                {label: 'All projects', value: 'all'},
+                                {label: 'Featured projects', value: 'featured'},
                                 {label: 'Custom', value: 'custom'},
                             ]}
                             onChange={(newType) => setAttributes({sliderType: newType})}
